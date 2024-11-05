@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form</title>
+    <style>
+        input {
+                width: 90%;
+                height: 25px;
+        }
+    </style>
+</head>
+
+<body style="background-color:  #FFF5E1;">
+    <center>
+        <div>
+            <h1>Form</h1>
+        </div>
+
+        <form action="Submit.html" style="border: 5px solid black; padding: 1%; margin: 25%; margin-top: 1%; margin-bottom: 1%; background-color: #FFFFFF; font-size: x-large;" >
+            <div>
+        <label>First Name</label><br>
+        <input type="text" name="First_Name" size="15" required>
+        <br>
+        <br>
+
+        <label>Last Name</label><br>
+        <input type="text" name="Last_Name" size="15" >
+        <br>
+        <br>
+
+        <label>Date of Birth</label><br>
+        <input type="date" name="Date_of_Birth" >
+        <br>
+        <br>
+
+        
+        <label>Gender</label><br>
+        <input type="radio" name="Gender" value="Male">Male
+        <input type="radio" name="Gender" value="Female">Female
+        <input type="radio" name="Gender" value="Other">Other
+        <br>
+        <br>
+
+        <label>E-Mail Id</label><br>
+        <input type="email" name="E-Mail" required size="20">
+        <br>
+        <br>
+
+        <label>Mobile Number</label><br>
+        <input type="number" name="Mobile_Number" required>
+        <br>
+        <br>
+
+        <label>Address</label><br>
+        <input type="text" name="Address" size="20" >
+        <br>
+        <br>
+            </div>
+
+            <div>
+        <label>Course</label><br>
+        <select name="Course">
+            <option value="B.Tech.">B.Tech.</option>
+            <option value="B.B.A">B.B.A</option>
+            <option value="B.Sc.">B.Sc..</option>
+            <option value="M.C.A">M.C.A</option>
+        </select>
+        <br>
+        <br>
+
+        <label>Board</label><br>
+        <select name="Board">
+            <option value="C.B.S.E">C.B.S.E.</option>
+            <option value="I.C.S.C.">I.C.S.C.</option>
+            <option value="State Board">State Board</option>
+        </select>
+        <br>
+        <br>
+
+        <label>Marks in Percentage</label><br>
+        <input type="number" name="marks" >
+        <br>
+        <br>
+
+
+        <label>Category</label><br>
+        <br>
+        <input type="radio" name="Category" value="General">General
+        <input type="radio" name="Category" value="S.C.">S.C.
+        <input type="radio" name="Category" value="S.T.">S.T.
+        <input type="radio" name="Category" value="O.B.C.">O.B.C.
+        <input type="radio" name="Category" value="General-EWS">General-EWS
+        <br>
+        <br>
+
+        <label>Sports/Co-Curricular Activities</label><br>
+        <input type="checkbox" name="Cricket" value="Cricket"> Cricket
+        <input type="checkbox" name="Football" value="Football"> Football
+        <input type="checkbox" name="Badminton" value="Badminton"> Badminton
+        <input type="checkbox" name="Basketball" value="Basketball"> Basketball
+        <br>
+        <input type="checkbox" name="Table Tennis" value="Table Tennis"> Table Tennis
+        <input type="checkbox" name="Chess" value="Chess"> Chess
+        <input type="checkbox" name="Kho-Kho" value="Kho-Kho"> Kho-Kho
+        <input type="checkbox" name="Kabaddi" value="Kabaddi"> Kabaddi
+        <br><br>
+
+        <label>12 mark Sheet</label><br>
+        <input type="file" name="12_Mark_Sheet" >
+        <br>
+        <br>
+        
+        <label>Password</label><br>
+        <input type="password" name="Password" >
+        <br>
+        <br>
+            </div>
+        
+            <div>
+        <label>Submit</label>
+        <input type="submit" value="submit" style="height: 25px;">
+        <br>
+
+        <label>Reset</label><br>
+        <input type="reset" value="reset" style="height: 25px;">
+        
+        <br>
+            </div>
+            </form>
+</center>
+</body>
+</html>
