@@ -1,0 +1,48 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+}
+
+/* Headings */
+h1 {
+    text-align: center;
+    color: #333;
+    margin-top: 20px;
+}
+
+h2 {
+    color: #555;
+}
+
+/* Section Styles */
+section {
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #ffffff;
+}
+
+/* Link Styles */
+a {
+    color: blue;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: green;
+    text-decoration: underline;
+}
+
+a:active {
+    color: red;
+}
+
+a:visited {
+    color: purple;
+}
