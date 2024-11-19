@@ -1,113 +1,217 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Catalogue</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #6dd5ed, #2193b0);
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Header Styles */
+        .header {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            color: #fff;
+        }
+
+        .header p {
+            font-size: 1.2rem;
+            color: #f8f8f8;
+        }
+
+        /* Catalogue Container */
+        .catalogue-container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Book Container */
+        .book-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        /* Book Item */
+        .book-item {
+            background: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+            width: 300px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .book-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .book-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .book-details {
+            padding: 15px;
+            text-align: left;
+        }
+
+        .book-details h3 {
+            font-size: 1.5rem;
+            color: #333;
+        }
+
+        .book-details p {
+            font-size: 1rem;
+            margin: 5px 0;
+            color: #555;
+        }
+
+        /* Add to Cart Button */
+        .add-to-cart {
+            background: #2193b0;
+            color: #fff;
+            border: none;
+            width: 100%;
+            padding: 10px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .add-to-cart:hover {
+            background: #197b92;
+        }
+    </style>
 </head>
+
 <body>
-    <div class="book-container">
-        <div class="book-item">
-            <img src="Images/DS_c_cpp.jpeg" alt="Data Structures and Algorithms">
-            <div class="book-details">
-                <h3>Book: DS and C++</h3>
-                <p>Author: Yedidyaah Langsam</p>
-                <p>Publication: Wiely</p>
-                <p>Price: Rs.1099</p>
+    <div class="catalogue-container">
+        <header class="header">
+            <h1>Book Catalogue</h1>
+            <p>Explore our collection of academic books!</p>
+        </header>
+        <div class="book-container">
+            <div class="book-item">
+                <img src="Images/DS_c_cpp.jpeg" alt="Data Structures and Algorithms">
+                <div class="book-details">
+                    <h3>DS and C++</h3>
+                    <p><strong>Author:</strong> Yedidyaah Langsam</p>
+                    <p><strong>Publication:</strong> Wiley</p>
+                    <p><strong>Price:</strong> Rs. 1099</p>
+                </div>
+                <button class="add-to-cart">Add to Cart</button>
             </div>
-            <button class="add-to-cart">Add to Cart</button>
-        </div>
 
-        <div class="book-item">
-            <img src="Images/EE.jpg" alt="Electrical Engineering">
-            <div class="book-details">
-                <h3>Book: EE</h3>
-                <p>Author: K.S. Suresh Kumar</p>
-                <p>Publication: Princetonhall</p>
-                <p>Price: Rs.1899</p>
+            <div class="book-item">
+                <img src="Images/EE.jpg" alt="Electrical Engineering">
+                <div class="book-details">
+                    <h3>Electrical Engineering</h3>
+                    <p><strong>Author:</strong> K.S. Suresh Kumar</p>
+                    <p><strong>Publication:</strong> Princetonhall</p>
+                    <p><strong>Price:</strong> Rs. 1899</p>
+                </div>
+                <button class="add-to-cart">Add to Cart</button>
             </div>
-            <button class="add-to-cart">Add to Cart</button>
-        </div>
 
-        <div class="book-item">
-            <img src="Images/FluidD.jpeg" alt="Java 2">
-            <div class="book-details">
-                <h3>Book: Fluid Dynamics</h3>
-                <p>Author: M. D. Raisinghania</p>
-                <p>Publication: S. Chand</p>
-                <p>Price: Rs.1500</p>
+            <div class="book-item">
+                <img src="Images/FluidD.jpeg" alt="Fluid Mechanics">
+                <div class="book-details">
+                    <h3>Fluid Mechanics</h3>
+                    <p><strong>Author:</strong> Yedidyaah Langsam</p>
+                    <p><strong>Publication:</strong> Wiley</p>
+                    <p><strong>Price:</strong> Rs. 1099</p>
+                </div>
+                <button class="add-to-cart">Add to Cart</button>
             </div>
-            <button class="add-to-cart">Add to Cart</button>
-        </div>
 
-        <div class="book-item">
+            <div class="book-item">
             <img src="Images/Intro_Algo.jpeg" alt="Algorithms">
-            <div class="book-details">
-                <h3>Book: Introduction to Algorithms</h3>
-                <p>Author: Michael David</p>
-                <p>Publication: Sampublication</p>
-                <p>Price: Rs.1699</p>
+                <div class="book-details">
+                    <h3>Algorithms</h3>
+                    <p><strong>Author:</strong> Yedidyaah Langsam</p>
+                    <p><strong>Publication:</strong> Wiley</p>
+                    <p><strong>Price:</strong> Rs. 1099</p>
+                </div>
+                <button class="add-to-cart">Add to Cart</button>
             </div>
-            <button class="add-to-cart">Add to Cart</button>
-        </div>
 
-        <div class="book-item">
-            <img src="Images/ME.jpeg" alt="M.E.">
-            <div class="book-details">
-                <h3>Book: Mechanical Engineering</h3>
-                <p>Author: S. S, Bhavikatti</p>
-                <p>Publication: NAIP</p>
-                <p>Price: Rs.1500</p>
+            <div class="book-item">
+                <img src="Images/ME.jpeg" alt="Mechanics">
+                <div class="book-details">
+                    <h3>Mechanical Engineering</h3>
+                    <p><strong>Author:</strong> Yedidyaah Langsam</p>
+                    <p><strong>Publication:</strong> Wiley</p>
+                    <p><strong>Price:</strong> Rs. 1099</p>
+                </div>
+                <button class="add-to-cart">Add to Cart</button>
             </div>
-            <button class="add-to-cart">Add to Cart</button>
-        </div>
 
-        <div class="book-item">
-            <img src="Images/MechMat.jpg" alt="Mechanics of Materials">
-            <div class="book-details">
-                <h3>Book: Mechanics of Materials</h3>
-                <p>Author: Barry J. Goodno</p>
-                <p>Publication: S. Chand</p>
-                <p>Price: Rs.1599 </p>
+            <div class="book-item">
+                <img src="Images/MechMat.jpg" alt="Mechanics of Materials">
+                <div class="book-details">
+                    <h3>Mechanics of Materials</h3>
+                    <p><strong>Author:</strong> Yedidyaah Langsam</p>
+                    <p><strong>Publication:</strong> Wiley</p>
+                    <p><strong>Price:</strong> Rs. 1099</p>
+                </div>
+                <button class="add-to-cart">Add to Cart</button>
             </div>
-            <button class="add-to-cart">Add to Cart</button>
-        </div>
 
-        <div class="book-item">
-            <img src="Images/StructAnal.jpg" alt="Structural Analysis">
-            <div class="book-details">
-                <h3>Book: Structural Analysis</h3>
-                <p>Author: R. C. Hibbeler</p>
-                <p>Publication: S. Chand</p>
-                <p>Price: Rs.1500</p>
+            <div class="book-item">
+                <img src="Images/StructAnal.jpg" alt="Structural Analysis">
+                <div class="book-details">
+                    <h3>Structural Analysis</h3>
+                    <p><strong>Author:</strong> Yedidyaah Langsam</p>
+                    <p><strong>Publication:</strong> Wiley</p>
+                    <p><strong>Price:</strong> Rs. 1099</p>
+                </div>
+                <button class="add-to-cart">Add to Cart</button>
             </div>
-            <button class="add-to-cart">Add to Cart</button>
-        </div>
 
-        <div class="book-item">
-            <img src="Images/SysCtrl_.jpg" alt="System Control">
-            <div class="book-details">
-                <h3>Book: Control System Engineering</h3>
-                <p>Author: M. Gopal</p>
-                <p>Publication: S. Chand</p>
-                <p>Price: Rs.1599</p>
+            <div class="book-item">
+                <img src="Images/SysCtrl_.jpg" alt="System Control">
+                <div class="book-details">
+                    <h3>System Control</h3>
+                    <p><strong>Author:</strong> Yedidyaah Langsam</p>
+                    <p><strong>Publication:</strong> Wiley</p>
+                    <p><strong>Price:</strong> Rs. 1099</p>
+                </div>
+                <button class="add-to-cart">Add to Cart</button>
             </div>
-            <button class="add-to-cart">Add to Cart</button>
-        </div>
 
-        <div class="book-item">
-            <img src="Images/thermo.jpg" alt="Thermodynamics">
-            <div class="book-details">
-                <h3>Book: Thermodynamics</h3>
-                <p>Author: Mehmet Konoglu</p>
-                <p>Publication: S. Chand</p>
-                <p>Price: Rs.1500</p>
+            <div class="book-item">
+                <img src="Images/thermo.jpg" alt="Thermodynamics">
+                <div class="book-details">
+                    <h3>Thermodynamics</h3>
+                    <p><strong>Author:</strong> Yedidyaah Langsam</p>
+                    <p><strong>Publication:</strong> Wiley</p>
+                    <p><strong>Price:</strong> Rs. 1099</p>
+                </div>
+                <button class="add-to-cart">Add to Cart</button>
             </div>
-            <button class="add-to-cart">Add to Cart</button>
+
         </div>
-
-
     </div>
 </body>
 </html>
