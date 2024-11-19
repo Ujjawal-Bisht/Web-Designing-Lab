@@ -3,13 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Take 03- Home</title>
+    <title>Home Page - IPEC Bookstore</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<frameset rows="10%, *">
-    <frame name="topleftFrame" src="topframe.html">
-    <frameset cols="25%, *">
-        <frame name="BottomLeftFrame" src="bottomleft.html">
-        <frame name="bottomRightFrame" src="#">
-    </frameset>
-</frameset>
+<body>
+    <div class="main-container">
+        <!-- Welcome Section -->
+        <div class="content" align="center">
+            <section class="welcome-section">
+                <h1>Welcome to <span class="highlight">IPEC Bookstore</span></h1>
+                <p>Your one-stop shop for all your academic book needs!</p>
+            </section>
+
+            <!-- Search Bar -->
+            <section class="search-bar">
+                <input type="text" placeholder="Search for books, authors, or ISBN...">
+                <button>Search</button>
+            </section>
+        </div>
+
+        <!-- Stats Section -->
+        <div class="stats">
+            <div class="stat">
+                <p class="number">20+</p>
+                <p>Years of Excellence</p>
+            </div>
+            <div class="stat">
+                <p class="number">15000+</p>
+                <p>Alumni</p>
+            </div>
+            <div class="stat">
+                <p class="number">200+</p>
+                <p>Recruiters</p>
+            </div>
+            <div class="stat">
+                <p class="number">100+</p>
+                <p>Awards Won</p>
+            </div>
+        </div>
+
+        <!-- About Section -->
+        <section class="about">
+            <p>IPEC is one of the most preferred engineering colleges in Ghaziabad Delhi NCR for aspiring engineers and technologists.</p>
+            <p>It was established in the year 2000, by leading academicians and business leaders in North India, under the aegis of Shail Garg Shiksha Sansthan, a non-profit making society. IPEC is the best engineering college in Ghaziabad Delhi NCR with 20+ years of excellence, a rich alumni base of 15000+ students, and best placement with 200+ recruiters.</p>
+            <a href="#" class="view-more-btn">View More</a>
+        </section>
+
+        <!-- Accreditations Section -->
+        <section class="accreditations">
+            <img src="Images/AICTC_logo.webp" alt="AICTE" width="100">
+            <img src="Images/aktu_logo.jpg" alt="AKTU" width="100">
+            <img src="Images/NBA_logo.jpeg" alt="NBA" width="100">
+            <img src="Images/naac.jpeg" alt="NAAC" width="100">
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <hr>
+        <section class="assistance" align="center">
+            <h2>Need Assistance?</h2>
+            <p>Our team is here to help you find the right books for your courses.</p>
+            <button class="contact-btn">Contact Support</button>
+        </section>
+    </footer>
+</body>
 </html>
