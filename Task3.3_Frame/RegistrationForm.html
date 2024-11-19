@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 02- Registration Form</title>
+    <style>
+        body {
+            background-color: #FFF5E1;
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .form-container {
+            background-color: #fff;
+            padding: 20px;
+            border: 2px solid #333;
+            border-radius: 8px;
+            width: 50%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="number"],
+        input[type="password"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin-right: 10px;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Registration Form</h2>
+        <form action="submit.php" method="post">
+            <div>
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" name="firstName" required>
+            </div>
+
+            <div>
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName" name="lastName">
+            </div>
+
+            <div>
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob">
+            </div>
+
+            <div>
+                <label for="gender">Gender:</label>
+                <input type="radio" id="male" name="gender" value="male"> Male
+                <input type="radio" id="female" name="gender" value="female"> Female
+                <input type="radio" id="other" name="gender" value="other"> Other
+            </div>
+
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div>
+                <label for="mobile">Mobile Number:</label>
+                <input type="tel" id="mobile" name="mobile" required>
+            </div>
+
+            <div>
+                <label for="address">Address:</label>
+                <textarea id="address" name="address"></textarea>
+            </div>
+
+            <div>
+                <label for="course">Course:</label>
+                <select id="course" name="course">
+                    <option value="B.Tech.">B.Tech.</option>
+                    <option value="B.B.A">B.B.A</option>
+                    <option value="B.Sc.">B.Sc.</option>
+                    <option value="M.C.A">M.C.A</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="board">Board:</label>
+                <select id="board" name="board">
+                    <option value="C.B.S.E">C.B.S.E.</option>
+                    <option value="I.C.S.E.">I.C.S.E.</option>
+                    <option value="State Board">State Board</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="marks">Marks in Percentage:</label>
+                <input type="number" id="marks" name="marks">
+            </div>
+
+            <div>
+                <label for="category">Category:</label>
+                <input type="radio" id="general" name="category" value="General"> General
+                <input type="radio" id="sc" name="category" value="SC"> SC
+                <input type="radio" id="st" name="category" value="ST"> ST
+                <input type="radio" id="obc" name="category" value="OBC"> OBC
+                <input type="radio" id="general-ews" name="category" value="General-EWS"> General-EWS
+            </div>
+
+            <div>
+                <label>Sports/Co-Curricular Activities:</label><br>
+                <input type="checkbox" name="cricket" value="Cricket"> Cricket
+                <input type="checkbox" name="football" value="Football"> Football
+                <input type="checkbox" name="badminton" value="Badminton"> Badminton
+                <input type="checkbox" name="basketball" value="Basketball"> Basketball
+                <input type="checkbox" name="tableTennis" value="Table Tennis"> Table Tennis
+                <input type="checkbox" name="chess" value="Chess"> Chess
+                <input type="checkbox" name="khoKho" value="Kho-Kho"> Kho-Kho
+                <input type="checkbox" name="kabaddi" value="Kabaddi"> Kabaddi
+            </div>
+
+            <div>
+                <label for="markSheet">12th Mark Sheet:</label>
+                <input type="file" id="markSheet" name="markSheet">
+            </div>
+
+            <div>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password">
+            </div>
+
+            <div class="button-container">
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </div>
+        </form>
+    </div>
+</body>
+</html>

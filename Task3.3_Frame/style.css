@@ -180,3 +180,88 @@ footer h2 {
 .contact-btn:hover {
   background: #c0392b;
 }
+.logo-container {
+  background: #fff;
+  color: #333;
+  border-radius: 10px;
+  padding: 30px;
+  width: 90%;
+  max-width: 400px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.login-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.login-header h1 {
+  font-size: 2em;
+  margin: 0;
+  color: #2980b9;
+}
+
+.login-header p {
+  font-size: 1.2em;
+  color: #7f8c8d;
+}
+
+/* Login Form */
+.login-form label {
+  display: block;
+  margin: 10px 0 5px;
+  font-size: 1em;
+}
+
+.login-form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1em;
+  box-sizing: border-box;
+}
+
+.login-button {
+  width: 100%;
+  padding: 10px;
+  background: #2980b9;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.login-button:hover {
+  background: #1e6ba8;
+}
+
+/* Forgot Password Link */
+.forgot-password {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.forgot-password a {
+  color: #2980b9;
+  text-decoration: none;
+}
+
+.forgot-password a:hover {
+  text-decoration: underline;
+}
+
+.login-page {
+  font-family: "Arial", sans-serif;
+  background: linear-gradient(to bottom, #3498db, #2980b9);
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
