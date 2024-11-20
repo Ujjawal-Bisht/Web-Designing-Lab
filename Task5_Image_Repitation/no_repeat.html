@@ -1,20 +1,35 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lab 5 Task 1</title>
+    <title>Lab 5</title>
     <style>
         body {
             background-image: url('1.jpg');
-            background-repeat: space; 
+            background-repeat:no-repeat; 
             background-size: contain; /* Adjusts the size of the image */
             background-position: top; /* Aligns the image at the top */
             height: 10vh;
             margin: 0; /* Removes default margin around the body */
         }
+        .center-box {
+            width: 300px;
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+            padding: 20px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
     </style>
 </head>
 <body>
+    <div class="center-box">
+        <h2>Hello, World!</h2>
+        <p>This is a centered box.</p>
+    </div>
 </body>
 </html>
