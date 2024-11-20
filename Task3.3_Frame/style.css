@@ -16,6 +16,7 @@ header {
 }
 
 .logo-container {
+  background: linear-gradient(to right, #3498db, #2980b9);
   display: flex;
   align-items: center;
 }
