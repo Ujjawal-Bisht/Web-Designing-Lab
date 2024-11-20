@@ -1,48 +1,48 @@
-/* Global Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    padding: 0;
-    line-height: 1.6;
-    background-color: #f8f9fa;
+    padding: 20px;
+    background-color: #f0f0f0;
 }
 
-/* Headings */
-h1 {
+h1{
     text-align: center;
-    color: #333;
-    margin-top: 20px;
-}
-
-h2 {
-    color: #555;
-}
-
-/* Box Styles */
-section {
-    margin: 20px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: #ffffff;
-}
-
-/* Link Styles */
-a {
-    color: blue;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-a:hover {
-    color: green;
-    text-decoration: underline;
-}
-
-a:active {
     color: red;
 }
 
+p{
+    color: green;
+}
+
+.link-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+a {
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+a:link {
+    color: pink;
+    background-color: maroon;
+}
+
 a:visited {
-    color: purple;
+    color: blue;
+    background-color: pink;
+}
+
+a:hover {
+    color: white;
+    background-color: #3498db;
+}
+
+a:active {
+    color: yellow;
+    background-color: #f0f0f0;
 }
