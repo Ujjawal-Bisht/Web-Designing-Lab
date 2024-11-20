@@ -1,0 +1,41 @@
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 0px;
+    padding: 20px; /* Add padding for spacing */
+    border-bottom: 2px solid #ccc; /* Add a bottom border */
+}
+
+.college-name {
+    flex-grow: 1;
+    text-align: center;
+    font-size: 44px; /* Adjust font size as needed */
+    font-weight: bold; /* Add bold font weight */
+    color: #fff; /* Set text color to white */
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav li {
+    margin-right: 50px; /* Adjust spacing between links */
+}
+
+nav a {
+    color: #fff; 
+    text-decoration: none; 
+    font-weight: bold; 
+}
+
+nav a:hover {
+    color: red
+}
+nav a:active {
+    color: greenyellow
+}
