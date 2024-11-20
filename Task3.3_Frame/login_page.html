@@ -4,23 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Page</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="login.css">
 </head>
-<body class="login-page">
+<body>
     <div class="login-container">
-        <div class="login-header">
-            <h1>Welcome to College Portal</h1>
-            <p>Student Login</p>
-        </div>
-        <form action="dashboard.html" method="POST" class="login-form">
-            <label for="student-id">Student ID</label>
-            <input type="text" id="student-id" name="student-id" placeholder="Enter your Student ID" required>
-            
-            <label for="password">Password</label>
-            <input type="password" id="password" name="password" placeholder="Enter your Password" required>
-            
-            <button type="submit" class="login-button">Login</button>
-            <p class="forgot-password"><a href="#">Forgot Password?</a></p>
+        <h2>Login</h2>
+        <form action="dashboard.html" method="post">
+            <label for="student-id">Student ID:</label>
+            <input type="text" id="student-id" name="student-id" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit">Login</button>
+            <a href="#">Forgot Password?</a>
         </form>
     </div>
 </body>
