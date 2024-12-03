@@ -28,3 +28,8 @@ console.log(z);
 //  Variable names are case sensitive
 // '$' dollar signs are allowed in variable names
 
+/*
+  Allowed Variables:-  'abc', '_abc',  '$abc',  'ab_$c'
+  Not Allowed Variables:- '123abc',  'ab c'
+*/
+
