@@ -68,3 +68,28 @@ console.log(z)
 //    These variables are locally accepted only in {} braces
 
 
+TODO:/*     There are total 7 premitive datatypes in JS
+  1.) numeric
+  2.) string
+  3.) boolean
+  4.) undefined
+  5.) null
+  6.) symbol
+  7.) bigint
+
+            There are two types of objects
+            primitive objects
+            reference objects
+
+              primitive objects are stored on the stack
+            reference objects are stored on the heap
+              primitive objects are copied by value
+            reference objects are copied by reference
+              primitive objects are immutable
+            reference objects are mutable
+            
+            Strings are immutable
+            Array, Date, RegExp, Function, Map, Set, WeakMap, WeakSet are reference objects
+            They are stored on the heap
+
+*/
