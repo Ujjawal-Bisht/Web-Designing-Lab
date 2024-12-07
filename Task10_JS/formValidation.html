@@ -15,7 +15,7 @@
         }
 
         .form{
-            background-color:blanchedalmond;
+            background-color:burlywood;
             margin: auto; 
             border: 3px solid; 
             padding: 20px; 
@@ -25,17 +25,37 @@
     </style>
 </head>
 <body>
-    <form class="form">
+
+    <script>
+        function validation(){
+            var name=document.getElementById("name").value;
+            var pWord=document.getElementById("password").value;
+            var CpWord=document.getElementById("conformpassword").value;
+
+            if (name == "" || pWord == "" || CpWord == "")
+            {
+                alert("All fields are mandatory!!!");
+            }
+            else if(name.length < 6){
+                alert("Length should not less than 6 character.");
+            }
+            else if(is){
+                alert("Length should not less than 6 character.");
+            }
+        }
+    </script>
+
+    <form class="form" action="submit.html" onsubmit="validation()">
         <label>Name:</label>
         <input type="text" id="name" name="name" required>
         <br><br>
         
         <label>Password:</label>
-        <input type="password" id="password" name="password" required>
+        <input type="password" id="password" name="password">
         <br><br>
 
         <label>Conform:</label>
-        <input type="password" id="conformpassword" name="conformpassword" required>
+        <input type="password" id="conformpassword" name="conformpassword">
         <br><br>
         
         <input type="submit" value="Submit">
