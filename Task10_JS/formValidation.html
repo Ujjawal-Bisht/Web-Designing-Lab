@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task10:Form Validation</title>
+    <style>
+        body {
+            background-color: antiquewhite;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .form{
+            background-color:blanchedalmond;
+            margin: auto; 
+            border: 3px solid; 
+            padding: 20px; 
+            width: 300px;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <form class="form">
+        <label>Name:</label>
+        <input type="text" id="name" name="name" required>
+        <br><br>
+        
+        <label>Password:</label>
+        <input type="password" id="password" name="password" required>
+        <br><br>
+
+        <label>Conform:</label>
+        <input type="password" id="conformpassword" name="conformpassword" required>
+        <br><br>
+        
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+        <br><br>
+        
+    </form>
+</body>
+</html>
