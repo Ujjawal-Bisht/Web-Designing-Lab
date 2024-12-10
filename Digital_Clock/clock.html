@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock</title>
+</head>
+<body>
+    <h2>
+        Digital Clock
+    </h2>
+
+    <div id="clock"></div>
+    <script>
+        function timer() {
+            const date = new Date();
+            let h = date.getHours();
+            let m = date.getMinutes();
+            let s = date.getSeconds();
+
+            m = checktime(m);
+            s = checktime(s);
+
+            document.getElementById('clock').innerHTML = h + ":" + m + ":" + s;
+            setTimeout(timer, 1000);
+
+            function checktime(i) {
+                if (i < 10) {
+                    i = "0" + i;
+                }
+                return i;
+            }
+            timer(); // Call the timer function initially.
+        }
+    </script>
+</body>
+</html>
