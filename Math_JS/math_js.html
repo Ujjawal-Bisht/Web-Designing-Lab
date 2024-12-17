@@ -9,9 +9,34 @@
     <p id="demo"></p>
 
     <script>
+        /*
         var num = parseInt(prompt("Enter any number:- "));
         let sq = Math.sqrt(num);
         document.getElementById("demo").innerHTML = "Square root of "+ num + " is " + sq;
+        */
+
+        // WAP to perform all the arithmatic operations using JS.
+
+        var num1 = parseInt(prompt("Enter the first number:")); 
+        var num2 = parseInt(prompt("Enter the second number:"));
+
+        var sum = num1 + num2; 
+        var difference = num1 - num2; 
+        var product = num1 * num2; 
+        var quotient = num1 / num2; 
+        var remainder = num1 % num2; 
+        
+        console.log("Sum: " + sum); 
+        console.log("Difference: " + difference); 
+        console.log("Product: " + product); 
+        console.log("Quotient: " + quotient); 
+        console.log("Remainder: " + remainder); // Output: Write the results to the web page 
+        
+        document.write("<p>Sum: " + sum + "</p>"); 
+        document.write("<p>Difference: " + difference + "</p>"); 
+        document.write("<p>Product: " + product + "</p>"); 
+        document.write("<p>Quotient: " + quotient + "</p>"); 
+        document.write("<p>Remainder: " + remainder + "</p>");
     </script>
 </body>
 </html>
