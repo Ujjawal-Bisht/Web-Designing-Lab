@@ -4,10 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Maths Functions in JS</title>
+    <style>
+        .box{
+            margin: 20% auto;
+            border: 1px solid black;
+            padding: 25px;
+            width: 200px;
+            height: 200px;
+            background-color: rgba(255, 0, 0, 0.5);
+            text-align: center;
+            font-size: 18px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+    </style>
 </head>
 <body>
-    <p id="demo"></p>
-
+    <div class="box" id="demo"></div>
     <script>
         /*
         var num = parseInt(prompt("Enter any number:- "));
@@ -16,27 +31,29 @@
         */
 
         // WAP to perform all the arithmatic operations using JS.
-
-        var num1 = parseInt(prompt("Enter the first number:")); 
+        var num1 = parseInt(prompt("Enter the first number:"));
         var num2 = parseInt(prompt("Enter the second number:"));
 
-        var sum = num1 + num2; 
-        var difference = num1 - num2; 
-        var product = num1 * num2; 
-        var quotient = num1 / num2; 
-        var remainder = num1 % num2; 
+        let sm = num1 + num2;
+        let sub = num1 - num2;
+        let prod = num1 * num2;
+        let ques = num1 / num2;
+        let rmndr = num1 % num2;
         
-        console.log("Sum: " + sum); 
-        console.log("Difference: " + difference); 
-        console.log("Product: " + product); 
-        console.log("Quotient: " + quotient); 
-        console.log("Remainder: " + remainder); // Output: Write the results to the web page 
+        // Output: Write the results in the console of web page.
+        console.log("Sum: " + sm);
+        console.log("Difference: " + sub);
+        console.log("Product: " + prod);
+        console.log("Quotient: " + ques);
+        console.log("Remainder: " + rmndr);
         
-        document.write("<p>Sum: " + sum + "</p>"); 
-        document.write("<p>Difference: " + difference + "</p>"); 
-        document.write("<p>Product: " + product + "</p>"); 
-        document.write("<p>Quotient: " + quotient + "</p>"); 
-        document.write("<p>Remainder: " + remainder + "</p>");
+        // Output: Write the results to the web page.
+        document.getElementById("demo").innerHTML = 
+        "<p>Sum: " + sm + "</p>" + 
+        "<p>Difference: " + sub + "</p>" + 
+        "<p>Product: " + prod + "</p>" + 
+        "<p>Quotient: " + ques + "</p>" + 
+        "<p>Remainder: " + rmndr + "</p>";
     </script>
 </body>
 </html>
