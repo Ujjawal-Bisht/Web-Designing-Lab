@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Area</title>
+    <style>
+        .heading{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        .buttons{
+            background-color: bisque;
+            margin: 12% 0 0 38%;
+            border: 2px solid;
+            padding: 3%;
+            height: 5%;
+            width: max-content;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h1 class="heading">!!! Welcome !!!</h1>
+    </center>
+    <div class="buttons">
+        <button class="Sq">Square</button>
+        <button class="Rect">Rectangle</button>
+        <button class="Tri" onclick="AreaTri()">Triangle</button>
+        <button class="Cir">Circle</button>
+    </div>
+
+    <script>
+        function AreaTri(){
+            const s1 = prompt("Enter length of Side 1:");
+            const s2 = prompt("Enter length of Side 2:");
+            const s3 = prompt("Enter length of Side 3:");
+
+            if (isNaN(s1) || isNaN(s2) || isNaN(s3)){
+                alert("Enter Valid sides");
+            }
+
+            if (s1 + s2 <= s3 || s1 + s3 <= s2 || s2 + s3 <= s1){
+                alert("Triangle doesnot possible!!!");
+            }
+
+            var s = (s1 + s2 + s3)/2 ; 
+            var r = (s * (s-s1) * (s-s2) * (s-s3));
+            var res = Math.sqrt(r); 
+
+            console.log("Area of Triangle is " + res);
+            
+        }
+    </script>
+</body>
+</html>

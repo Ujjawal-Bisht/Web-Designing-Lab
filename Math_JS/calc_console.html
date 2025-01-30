@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calc Using Console</title>
+</head>
+<body>
+    <div>
+        <button id="Calculator" onclick="calc()">Start Calculator</button>
+    </div>
+    <script>
+        function calc(){
+            const n1 = prompt('Enter num1')
+            const n2 = prompt('Enter num2')
+
+            const ch = prompt("Enter '*' for Multiplication and '/' for Division.")
+            if (ch === '*'){
+                console.log('Result = ' + n1*n2)
+            }
+            else if (ch === '/'){
+                console.log('Result = ' + n1/n2)
+            }
+            else{
+                console.log("Please enter Valid Input!!!")
+            }
+        }
+    </script>
+</body>
+</html>
