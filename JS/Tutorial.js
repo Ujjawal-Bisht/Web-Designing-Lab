@@ -187,3 +187,35 @@ console.log(str3);
 //  charAt, charCodeAt, concat, includes, indexOf, lastIndexOf, localeCompare, match, matchAll, padEnd, padStart, repeat, replace, replaceAll, search, slice, split, startsWith, substring, toLowerCase, toUpperCase, trim, trimStart, trimEnd, valueOf
 
 */
+
+
+//                  Starting with Arrays.
+/*
+const num1 = 200;
+console.log(num1);
+console.log(typeof(num1));
+
+const num2 = new Number(200);
+console.log(num2);
+console.log(typeof(num2));
+
+console.log(num1.toString().length);
+console.log(typeof(num1.toString()));
+
+console.log(num2.toFixed(2));   //200.00
+
+
+const newnum = new Number(123.839999);
+console.log(newnum.toPrecision(5));     //123.84
+console.log(newnum.toPrecision(4));     //123.8
+console.log(newnum.toPrecision(3));     //124
+console.log(newnum.toPrecision(2));     //1.2e+2
+
+const newnum2 = new Number(10000000000);
+console.log(newnum2.toLocaleString());      //By default, it will print in en-INDIAN format.
+console.log(newnum2.toLocaleString('en-IN'));       //IN -> Indian format
+console.log(newnum2.toLocaleString('en-US'));       //US -> US format
+console.log(newnum2.toLocaleString('en-GB'));       //GB -> UK format
+
+*/
+
