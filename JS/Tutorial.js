@@ -106,6 +106,84 @@ console.log(false == undefined);            //  False
 console.log(null == undefined);         //  True          
 */
 
-console.log('2' == 2);      // True
-console.log('2' === 2);     // False
+// console.log('2' == 2);      // True
+// console.log('2' === 2);     // False
 
+//  There are 2 types of Datatypes in JS:-
+/*
+1. Primitive Datatypes
+2. Reference Datatypes
+
+Primitive Datatypes:-
+1. String
+2. Number
+3. Boolean
+4. Undefined
+5. Null
+6. BigInt
+7. Symbol
+
+Reference Datatypes(Non-primitive):-
+1. Objects
+2. Arrays
+3. Functions
+*/
+
+/*
+const id = Symbol('123')
+const id2 = Symbol('123')
+console.log(id === id2);
+console.log(id == id2);
+
+console.log(id);
+console.log(id2);
+console.log(typeof(id));
+
+
+const bigNum = 1234567890123456789012345678901234567890n;
+console.log(bigNum);
+console.log(typeof(bigNum));
+*/
+
+
+//                  Starting with Strings.
+/*
+let name = "UB"
+let age = 20
+console.log("Hello my name is " + name + " and my age is " + age);      //Not recommended.
+console.log(`Hello my name is ${name} and my age is ${age}`);           //Better to use
+console.log(name[0])
+
+
+const gameName = new String('PokemonFireRed');
+console.log(gameName);
+console.log(typeof(gameName));              //Use console log o browser for better understanding.
+console.log(gameName[0]);
+
+console.log(gameName.__proto__);
+
+console.log(gameName.length);
+console.log(gameName.toLowerCase());
+console.log(gameName.toUpperCase());
+
+console.log(gameName.charAt(0));
+console.log(gameName.charAt(1));
+console.log(gameName.charAt(2));
+
+console.log(gameName.indexOf('P'));
+console.log(gameName.indexOf('o'));
+console.log(gameName.indexOf('z'));
+
+console.log(gameName.fontcolor('red'));
+
+const newStr = gameName.substr(0, 6);
+console.log(newStr);                //Here, we cannot use negative values.
+
+const str2 = gameName.slice(0, 6);
+console.log(str2);
+const str3 = gameName.slice(-14,-1);                //Here, we can use negative values.
+console.log(str3);
+
+//  charAt, charCodeAt, concat, includes, indexOf, lastIndexOf, localeCompare, match, matchAll, padEnd, padStart, repeat, replace, replaceAll, search, slice, split, startsWith, substring, toLowerCase, toUpperCase, trim, trimStart, trimEnd, valueOf
+
+*/
