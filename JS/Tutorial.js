@@ -223,3 +223,33 @@ console.log(newnum2.toLocaleString('en-GB'));       //GB -> UK format
 
 //      Math.abs, Math.acos, Math.acosh, Math.asin, Math.asinh, Math.atan, Math.atan2, Math.atanh, Math.cbrt, Math.ceil, Math.clz32, Math.cos, Math.cosh, Math.exp, Math.expm1, Math.floor, Math.fround, Math.hypot, Math.imul, Math.log, Math.log10, Math.log1p, Math.log2, Math.max, Math.min, Math.pow, Math.random, Math.round, Math.sign, Math.sin, Math.sinh, Math.sqrt, Math.tan, Math.tanh, Math.trunc
 
+
+//                  Starting with Dates.
+
+const d1 = new Date();
+console.log(d1);
+console.log(typeof(d1));
+
+console.log(d1.toString());             //Sun Feb 02 2025 23:34:05 GMT+0530 (India Standard Time)
+console.log(d1.toDateString());         //Sun Feb 02 2025
+console.log(d1.toLocaleString());       //2/2/2025, 11:34:05 pm
+console.log(d1.toTimeString());         //23:34:05 GMT+0530 (India Standard Time)
+console.log(d1.toLocaleTimeString());   //11:34:05 pm
+console.log(d1.getFullYear());          //2025
+console.log(d1.getMonth());             //1  -->   because months start from 0.
+
+//  Jan -> 0, Feb -> 1, Mar -> 2, Apr -> 3, May -> 4, Jun -> 5, Jul -> 6, Aug -> 7, Sep -> 8, Oct -> 9, Nov -> 10, Dec -> 11
+
+console.log(d1.getDate());              //2
+console.log(d1.getDay());               //0  -->   because days start from 0.
+
+//  Sun -> 0, Mon -> 1, Tue -> 2, Wed -> 3, Thu -> 4, Fri -> 5, Sat -> 6
+
+const d2 = new Date(2005,3,8);
+console.log(d2.toString());             //Wed Apr 08 2005 00:00:00 GMT+0530 (India Standard Time)
+
+const d3 = new Date(2005,3,8,11,30,45);
+console.log(d3.toLocaleString());   
+
+const d4 = new Date('2025-02-02');
+console.log(d4.toLocaleString());
