@@ -58,6 +58,20 @@ const array5 = [...array1, ...array2]
 //console.log(array5);                // [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
 
 // 9. Flat() - Flattens an array
-let array6 = [1, 2, [3, 4, [5, 6]]]
-//console.log(array6.flat(2));        // [ 1, 2, 3, 4, 5, 6 ]
+let array6 = [1, [1, 2] , 2, [3, 4, [5, 6]]]
+//  console.log(array6.flat(2));        // [ 1, 1, 2, 2, 3, 4, 5, 6]
+//  console.log(array6.flat(1));        // [ 1, 1, 2, 2, 3, 4, [ 5, 6 ]]
+//  console.log(array6.flat(Infinity));        // [ 1, 1, 2, 2, 3, 4, 5, 6]
 
+console.log(Array.isArray("HelloWorld!"));  // false
+console.log(Array.isArray(array6));         // true
+
+console.log(Array.from("HelloWorld!"));     // It will convert the string into an array
+
+let M1 = 99 ;
+let M2 = 98 ;
+let M3 = 97 ;
+let M4 = 96 ;
+let M5 = 95 ;
+
+console.log(Array.of(M1, M2, M3, M4, M5));  // [ 99, 98, 97, 96, 95 ]
